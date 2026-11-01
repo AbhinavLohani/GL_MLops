@@ -50,7 +50,7 @@ def build_pipeline(Xtrain: pd.DataFrame) -> "make_pipeline":
     model = XGBClassifier(
         objective="binary:logistic",
         eval_metric="logloss",
-        use_label_encoder=False,
+        #use_label_encoder=False,
         random_state=42,
     )
 
